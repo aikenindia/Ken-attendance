@@ -50,19 +50,6 @@ DB = dict(host="localhost", port=3306, database="face_attendance",
 
 CAMERAS = [
     {
-        "id": "it",
-        "name": "IT Department",
-        "url": [
-            "http://admin:%40Ken%40123@203.109.35.75:8081"
-            "/ISAPI/Streaming/channels/101/httpPreview",
-            "http://admin:%40Ken%40123@203.109.35.75:8081"
-            "/ISAPI/Streaming/channels/101/picture",
-        ],
-        "recognition": True,
-        "exit_zone": (0.62, 0.58, 1.0, 1.0),
-        "watch_zone": (0.45, 0.45, 1.0, 1.0),
-    },
-    {
         "id": "unit1",
         "name": "KEN Global Unit 1",
         "host": "https://203.109.35.73:8443",
