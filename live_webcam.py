@@ -40,7 +40,7 @@ while True:
             colour = (0, 0, 255)   # red = unknown
 
         box = f.bbox.astype(int)
-        cv2.rectangle(frame, (box[0], box[1]), (box[2], box[3]), colour, 2)
+        cv2.rectangle(frame, (box[0]), (box[1], box[2]), colour, 2)
         cv2.putText(frame, label, (box[0], box[1]-10),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.7, colour, 2)
 
